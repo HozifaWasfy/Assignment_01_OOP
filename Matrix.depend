@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1647802956 source:d:\studies\assignment_1\matrix\main.cpp
+1650468618 source:d:\studies\assignment_1\matrix\main.cpp
 	<iostream>
 	"Matrix.h"
 	"Menu.h"
 	"catch.h"
 
-1647811121 d:\studies\assignment_1\matrix\matrix.h
+1650461706 d:\studies\assignment_1\matrix\matrix.h
 	<vector>
 	<iosfwd>
 
-1647412043 d:\studies\assignment_1\matrix\catch.h
+1647415643 d:\studies\assignment_1\matrix\catch.h
 	<sstream>
 	<stdexcept>
 	<algorithm>
@@ -123,11 +123,11 @@
 	<iomanip>
 	<assert.h>
 
-1647802059 source:d:\studies\assignment_1\matrix\matrix.cpp
+1650777849 source:d:\studies\assignment_1\matrix\matrix.cpp
 	"Matrix.h"
 	<vector>
-	<cmath>
 	<iostream>
 
-1647806403 d:\studies\assignment_1\matrix\menu.h
+1650348677 d:\studies\assignment_1\matrix\menu.h
+	"Matrix.h"
 

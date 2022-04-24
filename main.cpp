@@ -2,7 +2,7 @@
 #include "Matrix.h"
 #include "Menu.h"
 using namespace std;
-//#define NORMAL_MODE
+#define NORMAL_MODE
 #ifdef NORMAL_MODE
 int main()
 {
@@ -48,9 +48,20 @@ TEST_CASE("summation of matrices"){
     Matrix a(vec,6,6);
     Matrix b(vec,6,6);
     Matrix c(6,6);
-    Matrix d1 = d1.sum(a,b);
+    Matrix d1 = a+b;
     SECTION("a + b = b + a"){
         CHECK(((d1.getEntry(2,2)==(b.getEntry(2,2)+(a.getEntry(2,2))))));
+    }
+
+}
+TEST_CASE("multiplication of matrices"){
+    vector<int> vec({1,3,5});
+    vector<int> vec2({2,4,6});
+    Matrix a(vec,2,3);
+    Matrix b(vec2,3,2);
+    Matrix d1 = a*b;
+    SECTION("d= b * a"){
+        CHECK(((d1.getEntry(1,1)== 20)));
     }
 
 }
@@ -60,10 +71,7 @@ TEST_CASE("memory overloading"){
         Matrix m(0,0);
         CHECK(m.size() == 0);
     }
-    SECTION("Matrix of size 1"){
-        Matrix m(1,1);
-        CHECK(m.getEntry(1,1) == 1);
-    }
+
     SECTION("Matrix of size 1000"){
         Matrix m(100,10);
         CHECK(m.size() == 1000);

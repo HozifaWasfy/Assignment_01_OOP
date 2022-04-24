@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="Matrix.cpp" />
 		<Unit filename="Matrix.h" />
+		<Unit filename="Menu.h" />
 		<Unit filename="catch.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
